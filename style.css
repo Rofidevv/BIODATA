@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.biodata-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.biodata-card:hover {
+    transform: translateY(-5px);
+}
+
+header {
+    background: linear-gradient(120deg, #6b73ff, #00d4ff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.tagline {
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.content {
+    padding: 30px 40px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content h2 i {
+    margin-right: 12px;
+    color: #6b73ff;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.info-item i {
+    color: #6b73ff;
+    font-size: 1.2rem;
+    width: 30px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    border-left: 2px solid #e0e0e0;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #6b73ff;
+    border: 2px solid white;
+}
+
+.timeline-item h3 {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 2px;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.hobi-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hobi {
+    background-color: #f0f4f8;
+    color: #3498db;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hobi:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 40px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.social-media a {
+    color: #555;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #6b73ff;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    .content {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}
